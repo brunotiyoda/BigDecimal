@@ -5,8 +5,9 @@ import java.math.BigDecimal;
 // Template Method
 public abstract class TemplateOfTribute implements Tribute {
 
+    // final to avoid changing
     @Override
-    public BigDecimal calculatesTax(BigDecimal salary) {
+    public final BigDecimal calculatesTax(BigDecimal salary) {
         if (shouldUseMinTax(salary)) {
             return useMinTax(salary);
         } else if (shouldUseMedTax(salary)) {
