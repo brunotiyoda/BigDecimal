@@ -2,7 +2,7 @@ package impl.com.interfac;
 
 import java.math.BigDecimal;
 
-public class Fgts implements Tribute {
+public class FGTS implements Tribute {
 
     @Override
     public BigDecimal calculatesTax(BigDecimal salary) {

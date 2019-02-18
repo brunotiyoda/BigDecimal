@@ -51,17 +51,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        double salarioBruto = 4463.81;
+        double salarioBruto = 3090;
 
         double inss = calculaINSS(salarioBruto);
         double fgts = calculaFGTS(salarioBruto);
         double irpf = calculaIRPF(salarioBruto);
         double salarioLiquido = salarioLiquido(salarioBruto, inss, fgts);
 
-        System.out.println(inss);
-        System.out.println(fgts);
-        System.out.println(irpf);
-        System.out.println(salarioLiquido);
+        System.out.println("Salário bruto..: " + salarioBruto);
+        System.out.println("INSS...........: " + inss);
+        System.out.println("FGTS...........: " + fgts);
+        System.out.println("IRPF...........: " + irpf);
+        System.out.println("Total a receber: " + salarioLiquido);
 
     }
 }

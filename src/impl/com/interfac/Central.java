@@ -5,15 +5,15 @@ import java.math.BigDecimal;
 public class Central {
 
     public static void main(String[] args) {
-        Employee bruno = new Employee(BigDecimal.valueOf(3090));
+        Employee bruno = new Employee(BigDecimal.valueOf(3000));
 
-        Tribute inss = new Inss();
+        Tribute inss = new INSS();
         BigDecimal inssTotal = inss.calculatesTax(bruno.getSalary());
 
-        Tribute irpf = new Irpf();
+        Tribute irpf = new IRPF();
         BigDecimal irpfTotal = irpf.calculatesTax(bruno.getSalary());
 
-        Tribute fgts = new Fgts();
+        Tribute fgts = new FGTS();
         BigDecimal fgtsTotal = fgts.calculatesTax(bruno.getSalary());
 
         System.out.println("Salary......: " + bruno.getSalary());

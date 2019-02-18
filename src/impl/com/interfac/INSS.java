@@ -2,7 +2,7 @@ package impl.com.interfac;
 
 import java.math.BigDecimal;
 
-public class Inss extends TemplateOfTribute {
+public class INSS extends TemplateOfTribute {
 
     @Override
     public BigDecimal useMinTax(BigDecimal salary) {

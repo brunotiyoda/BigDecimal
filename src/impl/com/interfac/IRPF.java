@@ -2,7 +2,7 @@ package impl.com.interfac;
 
 import java.math.BigDecimal;
 
-public class Irpf  extends TemplateOfTribute {
+public class IRPF extends TemplateOfTribute {
 
     @Override
     public BigDecimal useMinTax(BigDecimal salary) {
